@@ -1,0 +1,14 @@
+apply plugin: 'scala'
+apply from: 'https://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/javafx.plugin'
+
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+    compile 'org.scalafx:scalafx_2.10:1.0.0-M3'
+}
+
+javafx {
+    mainClass = 'Main'
+}
